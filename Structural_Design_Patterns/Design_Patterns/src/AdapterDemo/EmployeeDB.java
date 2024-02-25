@@ -1,3 +1,5 @@
+package AdapterDemo;
+
 public class EmployeeDB implements Employee {
     private String id;
     private String firstName;

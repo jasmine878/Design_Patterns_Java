@@ -1,9 +1,9 @@
-//We want to create an adapter to adapt the EmployeeLdap class so our EmployeeClient can use it
-//EmployeeClient can only add Employee type to its EmployeeList
+package AdapterDemo;//We want to create an adapter to adapt the AdapterDemo.EmployeeLdap class so our AdapterDemo.EmployeeClient can use it
+//AdapterDemo.EmployeeClient can only add AdapterDemo.Employee type to its EmployeeList
 
-//EmployeeLdap does not implement any interface, unlike EmployeeDB
+//AdapterDemo.EmployeeLdap does not implement any interface, unlike AdapterDemo.EmployeeDB
 public class EmployeeLdap {
-    //Notice EmployeeLdap is similar to Employee interface but has different variable names
+    //Notice AdapterDemo.EmployeeLdap is similar to AdapterDemo.Employee interface but has different variable names
 
     //cn is an id
     private String cn;

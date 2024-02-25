@@ -1,3 +1,5 @@
+package AdapterDemo;
+
 public class EmployeeAdapterLdap implements Employee {
     private final EmployeeLdap employeeFromLdap;
     public EmployeeAdapterLdap(EmployeeLdap employeeFromLdap) {

@@ -1,3 +1,7 @@
+package AdapterDemo;
+
+import AdapterDemo.Employee;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,9 +13,9 @@ public class EmployeeClient {
 
         employees.add(employeeFromDB);
 
-        //Will not work!  EmployeeLdap is not type Employee.
+        //Will not work!  AdapterDemo.EmployeeLdap is not type AdapterDemo.Employee.
         // This is where the adapter comes into play!
-        // Employee employeeFromLdap = new EmployeeLdap("chewie", "Solo", "Han", "han@solo.com");
+        // AdapterDemo.Employee employeeFromLdap = new AdapterDemo.EmployeeLdap("chewie", "Solo", "Han", "han@solo.com");
 
         EmployeeLdap employeeFromLdap = new EmployeeLdap("chewie", "Solo", "Han", "han@solo.com");
 

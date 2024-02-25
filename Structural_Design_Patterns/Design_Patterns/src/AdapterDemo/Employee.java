@@ -1,3 +1,5 @@
+package AdapterDemo;
+
 public interface Employee {
     String getId();
     String getFirstName();

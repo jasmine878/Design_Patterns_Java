@@ -1,3 +1,5 @@
+package AdapterDemo;
+
 import java.util.List;
 
 public class AdapterDemo {
