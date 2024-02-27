@@ -11,6 +11,7 @@ public class ShapesWithBridgeDemo {
         Color green = new Green();
         Shape square2 = new Square(green);
 
+        //We don't have to change our shape to use the bridge between the color and the shape
         circle.applyColor();
         square.applyColor();
         square2.applyColor();
