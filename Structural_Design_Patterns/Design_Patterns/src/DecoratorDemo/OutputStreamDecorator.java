@@ -9,6 +9,9 @@ public class OutputStreamDecorator {
         OutputStream oStream = new FileOutputStream(file);
 
         DataOutputStream doStream = new DataOutputStream(oStream);
-        doStream.writeChars("text");
+        doStream.writeChars("Some text");
+
+        doStream.close();
+        oStream.close();
     }
 }
