@@ -10,19 +10,25 @@ public class JDBCDemo {
 
         try {
             Connection conn = instance.getConnection();
+
+            //Fist we create a Table
             Statement sta = conn.createStatement();
             int count = sta.executeUpdate("CREATE TABLE Address (ID INTEGER, StreetName "
                     + "VARCHAR(20), City VARCHAR(20))");
 
             System.out.println("Table created.");
+            System.out.println("Count is: " + count);
             sta.close();
 
+            //Then we insert records
             sta = conn.createStatement();
             count = sta.executeUpdate("INSERT INTO Address (ID, StreetName, City) "
                     + "values (1, '1234 Some street', 'Layton')");
             System.out.println(count + " record(s) created.");
+            System.out.println("Count is: " + count);
             sta.close();
 
+            //Lastly we select records back from the database
             sta = conn.createStatement();
             ResultSet rs = sta.executeQuery("SELECT * FROM Address");
 
