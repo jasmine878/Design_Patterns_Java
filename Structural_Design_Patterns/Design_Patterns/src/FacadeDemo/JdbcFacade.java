@@ -1,4 +1,4 @@
-package Facade;
+package FacadeDemo;
 
 import java.sql.*;
 import java.util.ArrayList;

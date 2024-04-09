@@ -1,4 +1,4 @@
-package Facade;
+package FacadeDemo;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
